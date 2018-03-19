@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Ksu.Cis300.MapViewer.Map">
+    <Position X="3.75" Y="1.5" Width="1.5" />
+    <Members>
+      <Field Name="components" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>gACAAAKAACAAAAAAAACAAAACAAoAAACBAAAAEAAAACA=</HashCode>
+      <FileName>Map.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_streets" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Ksu.Cis300.MapViewer.QuadTree">
+    <Position X="3.75" Y="5.5" Width="1.5" />
+    <AssociationLine Name="_northwestChild" Type="Ksu.Cis300.MapViewer.QuadTree" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.25" Y="6.712" />
+        <Point X="5.5" Y="6.712" />
+        <Point X="5.5" Y="7.404" />
+        <Point X="5.25" Y="7.404" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.298" Y="0.05" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="_northeastChild" Type="Ksu.Cis300.MapViewer.QuadTree">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.506" Y="0.081" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="_southwestChild" Type="Ksu.Cis300.MapViewer.QuadTree">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.286" Y="0.133" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="_southeastChild" Type="Ksu.Cis300.MapViewer.QuadTree" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.25" Y="5.673" />
+        <Point X="5.5" Y="5.673" />
+        <Point X="5.5" Y="6.481" />
+        <Point X="5.25" Y="6.481" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.318" Y="0.06" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAICAAAAAAAAoAAAAAAAAAAKAAAAAAAAIAAEAQAAQA=</HashCode>
+      <FileName>QuadTree.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_northwestChild" />
+      <Field Name="_northeastChild" />
+      <Field Name="_southwestChild" />
+      <Field Name="_southeastChild" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="_streets" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Ksu.Cis300.MapViewer.UserInterface">
+    <Position X="0.75" Y="1.5" Width="2" />
+    <Members>
+      <Field Name="components" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAGAAQAAAAACAQABCEAAABAAAAiEEIAACAAA=</HashCode>
+      <FileName>UserInterface.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="uxMap" />
+    </ShowAsAssociation>
+  </Class>
+  <Struct Name="Ksu.Cis300.MapViewer.StreetSegment">
+    <Position X="0.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAACAAggAgAAAAAAAAAAAAAAAAAAAAAAwABAA=</HashCode>
+      <FileName>StreetSegment.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
